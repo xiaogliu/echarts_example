@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/> 
+  <title>echarts多图表&&自适应</title>
+  <link rel="stylesheet" href="dist/css/reset.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+  <!-- 数据量少的情况下没需要把js文件抽离head导致影响初次加载的样式 -->
+  <script src="dist/lib/js/echarts.min.js"></script>
+  <script src="dist/js/main.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="chart">     
+      <ul class="clear-fix">
+        <li>
+          <div class="chart-wrap">
+            <p class="temp">空气/土壤温度对比曲线</p>
+            <div id="tempChart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+        <li>
+          <div class="chart-wrap">
+            <p class="humi">空气/土壤湿度对比曲线</p>
+            <div id="humiChart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+        <li>
+          <div class="chart-wrap">
+            <p class="co2">CO2曲线</p>
+            <div id="co2Chart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+        <li>
+          <div class="chart-wrap">
+            <p class="o2">O2曲线</p>
+            <div id="o2Chart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+        <li>
+          <div class="chart-wrap">
+            <p class="pm">PM2.5曲线</p>
+            <div id="pmChart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+        <li>
+          <div class="chart-wrap">
+            <p class="light">光照强度曲线</p>
+            <div id="lightChart" style="width: 100%;height:400px;"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
